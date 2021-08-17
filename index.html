@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <title>Portfólio</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <header id="home">
+            <div class="img-wrapper">
+                <img src="imagens/bg.jpg" alt="">
+            </div>
+            
+            <div class="banner">
+              <form>
+                <h1>Sugestão de Filmes</h1>
+                <select id="generos" name="select">
+                  <option value="1">-- SELECIONE --</option>
+                  <option value="18">DRAMA</option>
+                  <option value="28">AÇÃO</option>
+                  <option value="12">AVENTURA</option>
+                  <option value="99">DOCUMENTÁRIO</option>
+                  <option value="35">COMÉDIA</option>
+                </select>
+                <button href="#" type="submit">Pesquisar</button>
+              </form>
+               
+            </div>
+        </header>   
+
+        <div class="sessao-projetos" >
+          <div class="sessao-header">
+            <h1>Filmes</h1>
+          </div>
+          <div id="projetos" class="projetos">
+          </div>           
+        </div>
+        </section>
+        
+        <footer>
+          <div class="footer-content">
+            <p>
+              Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+            </p>
+            <div class="social-list">
+              <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <a href="#home" id="link-topo">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+   </body>
+
+   <script src="script.js"></script>
+</html>
