@@ -23,7 +23,7 @@ html{
 
 header {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   position: relative;
 }
@@ -98,6 +98,26 @@ header {
   animation: moveBanner 1s 0.9s forwards;
 }
 
+.sessao-projetos button {
+  font-family: var(--font-action);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  border: none;
+  margin-bottom: 2rem;
+  margin-left: 46%;
+  height: 100%;
+  width:200px;
+  height:40px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: moveBanner 1s 0.9s forwards;
+}
+
 @keyframes moveBanner {
   0% {
     transform: translateY(10rem) rotateY(-30deg);
@@ -108,31 +128,6 @@ header {
   }
 }
 
-
-.social-media {
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.social-media i {
-  background-color: #6a3093;
-  color: rgba(255, 255, 255, 1);
-  height: 2.5rem;
-  width: 2.5rem;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: background-color 1s;
-}
-
-.social-media i:hover {
-  background-color: #a044ff;
-}
 
 
 
@@ -150,6 +145,7 @@ header {
   margin-bottom: 1.5rem;
 }
 
+ 
 
 
 .projetos {
@@ -241,63 +237,6 @@ header {
   visibility: visible;
 }
 
-
-.input-group {
-  position: relative;
-}
-
-.field {
-  background: transparent;
-  border: none;
-  width: 20rem;
-  font-size: 1.5rem;
-  font-family: var(--font-secundary);
-  border-bottom: 2px dashed #636363;
-  height: 3rem;
-  outline: none;
-  margin: 1rem 0;
-}
-
-.input-group textarea {
-  padding-top: 1rem;
-  max-width: 25rem;
-  max-height: 3rem;
-}
-
-.field-label {
-  position: absolute;
-  left: 0;
-  top: 2rem;
-  font-size: 1rem;
-  font-family: var(--font-secundary);
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-
-.field:focus ~ label {
-  top: 0;
-  font-size: 0.7rem;
-}
-
-.field:focus {
-  border-bottom: 1px solid;
-}
-
-.btn-submit {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  width: 80%;
-  height: 2.5rem;
-  margin-top: 1rem;
-  letter-spacing: 0.2rem;
-  cursor: pointer;
-  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-}
-
-.preenchido{
-    pointer-events: none;
-}
 
 
 footer{

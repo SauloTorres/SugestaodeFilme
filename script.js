@@ -107,5 +107,9 @@ function criarLinha(filme){
     return card
 }
 
+$( "#carrega" ).click(function() {
+    main(data);
+  });
+
 main(data)
 
