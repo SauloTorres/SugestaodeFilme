@@ -92,7 +92,7 @@ function criarLinha(filme){
     html +=  '<img src="https://image.tmdb.org/t/p/w500/'+filme.poster_path+'"alt="imagem do projeto ToDo" />'
     html +='</div>'
     html +='<div class="card-info">'
-    html +=  '<h2>'+filme.title+'</h2>'
+    html +=  '<h2 class="tamanho">'+filme.title+'</h2>'
     html +=  '<h3>'+genero+'</h3>'
     html +=  '<p>'+filme.overview+'</p>'
    // html +=  '<button class="btn">Saiba Mais</button>'
@@ -111,5 +111,5 @@ $( "#carrega" ).click(function() {
     main(data);
   });
 
-main(data)
+main(data);
 
