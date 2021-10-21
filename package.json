@@ -1,0 +1,26 @@
+{
+  "name": "sugestaodefilme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.14",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SauloTorres/SugestaodeFilme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SauloTorres/SugestaodeFilme/issues"
+  },
+  "homepage": "https://github.com/SauloTorres/SugestaodeFilme#readme"
+}

@@ -1,3 +1,4 @@
+
 var query = location.search.slice(1);
 var partes = query.split('&');
 var data = {};
@@ -13,13 +14,13 @@ if(data.select){
     $('html, body').animate({ scrollTop: 700 }, 50);
 }
 
-
 async function fazGET(){
     let url = "http://api.themoviedb.org/3/movie/top_rated?api_key=e899b70ce4804f83aa10a6bdadbd24f1&language=pt-BR&page="+Math.random() * Math.floor((450 - 1) + 1)
     const dados = await fetch(url);
     const filmes = await dados.json();
     return filmes
 }
+
 
 function main(genre){
 
@@ -87,9 +88,10 @@ function criarLinha(filme){
         }
     }
 
-    html = '<div class="card">'
+    html = '<a class="card" href="/movie/'+filme.id+'">'
+    html += '<div class="card">'
     html += '<div class="card-img-wrapper">'
-    html +=  '<img src="https://image.tmdb.org/t/p/w500/'+filme.poster_path+'"alt="imagem do projeto ToDo" />'
+    html +=  '<img  src="https://image.tmdb.org/t/p/w500/'+filme.poster_path+'" />'
     html +='</div>'
     html +='<div class="card-info">'
     html +=  '<h2 class="tamanho">'+filme.title+'</h2>'
@@ -98,6 +100,7 @@ function criarLinha(filme){
    // html +=  '<button class="btn">Saiba Mais</button>'
     html +='</div>'
     html +='</div>'
+    html +='</a>'
    // console.log(html)
 
     card = document.createElement('div')
